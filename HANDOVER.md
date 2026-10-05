@@ -114,7 +114,7 @@ Quelle der Wahrheit: [`praesentation/README.md`](praesentation/README.md). Kurz:
 5. **Reizzeitpunkt validieren:** Der Reiz (D11-Puls) und die Trigger-Zeile werden nacheinander ausgelöst; die
    Verzögerung zum tatsächlichen Reiz (Gerät, Applikator) ist nicht gemessen.
 6. **Altbau aufräumen** (siehe oben) und optional ein englisches README.
-7. **Marker-Zeitstempel:** Trigger tragen die Rechnerzeit beim Eintreffen der Zeile; die Arduino-`micros()`
+7. **Marker-Zeitstempel:** Trigger tragen die Rechnerzeit beim Eintreffen der Zeile; die Arduino-`millis()`
    werden nicht zur Synchronisation genutzt. Ein fester Versatz/Jitter wäre damit prüfbar.
 
 ## Entwickeln

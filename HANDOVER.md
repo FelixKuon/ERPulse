@@ -71,11 +71,11 @@ Das sind die Stellen, an denen früher Zeit verloren ging:
 Der Arduino sendet je Reiz **eine Textzeile** mit 115 200 Baud über USB-Serial:
 
 ```
-TRIGGER:<laufende Nummer>,<micros()>
+TRIGGER:<laufende Nummer>,<millis()>
 ```
 
-Alle anderen Zeilen werden als Statusmeldung im Trigger-Log angezeigt. Der Sketch selbst liegt nicht in
-diesem Repo; er muss nur diese Zeile beim Auslösen des Reizes ausgeben.
+Alle anderen Zeilen werden als Statusmeldung im Trigger-Log angezeigt. Die Firmware (UNO R4 WiFi) liegt in
+[`firmware/trigger/`](firmware/trigger/README.md); jede andere Firmware muss nur diese Zeile ausgeben.
 
 ### Aufnahmeformat
 
@@ -111,7 +111,8 @@ Quelle der Wahrheit: [`praesentation/README.md`](praesentation/README.md). Kurz:
 3. **Mehr Epochen:** Unter ~30 Epochen ist eine Amplitudenangabe ohne Kontrolle nicht belastbar
    (`praesentation/…/A4_mittelungsgewinn`).
 4. **Applikatorvergleich sauber wiederholen** (Code liegt noch in `figuren_praesentation.py`).
-5. **Arduino-Sketch** ins Repo aufnehmen (liegt bisher nur lokal).
+5. **Reizzeitpunkt validieren:** Der Reiz (D11-Puls) und die Trigger-Zeile werden nacheinander ausgelöst; die
+   Verzögerung zum tatsächlichen Reiz (Gerät, Applikator) ist nicht gemessen.
 6. **Altbau aufräumen** (siehe oben) und optional ein englisches README.
 7. **Marker-Zeitstempel:** Trigger tragen die Rechnerzeit beim Eintreffen der Zeile; die Arduino-`micros()`
    werden nicht zur Synchronisation genutzt. Ein fester Versatz/Jitter wäre damit prüfbar.

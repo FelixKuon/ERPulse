@@ -26,3 +26,14 @@ jobs:
         run: python -m pytest tests -q
       - name: Smoke-Test (Hauptfenster startet und spielt die Beispielaufnahme ab)
         run: python tests/smoke_gui.py
+
+  firmware:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install platformio
+      - name: Firmware bauen (UNO R4 WiFi)
+        run: pio run -d firmware/trigger

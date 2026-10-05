@@ -74,8 +74,8 @@ Tempo z. B. auf 8× stellen. Rohsignal, ERP und Zeit-Frequenz bauen sich wie bei
 ### Hardware
 
 * g.tec **Unicorn Hybrid Black** (Bluetooth-Classic/SPP)
-* optional: **Arduino** (Uno/Nano/Leonardo und Klone), der pro Reiz eine Zeile `TRIGGER:<n>,<µs>` mit
-  115 200 Baud über USB schickt – siehe [HANDOVER.md](HANDOVER.md#trigger-protokoll)
+* optional: **Arduino UNO R4 WiFi** mit der Firmware aus [`firmware/trigger/`](firmware/trigger/README.md): löst die
+  Reize aus und schickt pro Reiz eine Zeile `TRIGGER:<n>,<ms>` über USB (andere Boards gehen, wenn sie dieselbe Zeile senden)
 
 ### macOS
 
@@ -153,6 +153,7 @@ gui/                    PyQt6-Oberfläche (connection_dev_window.py = Hauptfenst
 core/                   Reader (Unicorn, Arduino, Replay), ERP/TFR/ASR, Aufnahme, Port-Suche
 offline/                Auswertung: Laden, Filter, Triggerauswahl, Latenzmaße, Plots
 utils/filters.py        Echtzeit-Filter
+firmware/trigger/       Arduino-Firmware für die Reizsequenz und die Trigger
 tests/                  Unit-Tests + GUI-Rauchtest
 examples/               Beispielaufnahme
 praesentation/          Abbildungen und Befunde

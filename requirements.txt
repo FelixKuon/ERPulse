@@ -1,0 +1,13 @@
+# Live-Anwendung
+PyQt6>=6.5
+pyqtgraph>=0.13
+numpy>=1.24
+scipy>=1.10
+pyserial>=3.5
+
+# Artefaktunterdrückung (ASR) in der Live-Anwendung
+meegkit>=0.1.9
+
+# Offline-Auswertung (offline/, Notebooks, figuren_praesentation.py)
+pandas>=2.0
+matplotlib>=3.7

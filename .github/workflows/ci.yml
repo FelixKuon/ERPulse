@@ -1,0 +1,28 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ["3.10", "3.12"]
+    runs-on: ${{ matrix.os }}
+    env:
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - name: Linux: Qt-Systembibliotheken
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libegl1 libxkbcommon-x11-0 libxcb-cursor0 libgl1
+      - run: pip install -r requirements.txt pytest
+      - name: Unit-Tests (Latenzmaße, Trigger-Auswahl, Port-Suche)
+        run: python -m pytest tests -q
+      - name: Smoke-Test (Hauptfenster startet und spielt die Beispielaufnahme ab)
+        run: python tests/smoke_gui.py

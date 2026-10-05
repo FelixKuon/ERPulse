@@ -1,0 +1,7 @@
+-r requirements.txt
+pytest
+jupyterlab
+ipykernel
+
+# nur für den veralteten LSL-Build (main.py, devices/*.py)
+pylsl

@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+.claude/
+.pytest_cache/
+
+# persönliche Konfiguration
+config_local.py
+
+# eigene Messdaten (nur das Beispiel unter examples/ gehört ins Repo)
+recordings/
+data/
+versuchsaufbau/
+
+# Abbildungen: PDFs (Vektor) lassen sich mit figuren_praesentation.py neu erzeugen
+praesentation/**/*.pdf
+
+# alte Zwischenstände / Debug
+/*.png
+eeg_viewer_debug.ipynb

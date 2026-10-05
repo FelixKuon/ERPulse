@@ -1,0 +1,265 @@
+{
+  "abtastrate_hz": 250,
+  "filter": {
+    "highpass_hz": 1.0,
+    "lowpass_hz": null,
+    "notch_hz": 50.0
+  },
+  "asr_grenzwert": 12.0,
+  "gestartet": "2026-08-13T13:17:31",
+  "kanaele": [
+    "Fz",
+    "C3",
+    "Cz",
+    "C4",
+    "Pz",
+    "PO7",
+    "Oz",
+    "PO8"
+  ],
+  "beendet": "2026-08-13T13:22:48",
+  "samples": 78940,
+  "dauer_s": 315.76,
+  "ereignisse": [
+    {
+      "t": 45.8313,
+      "typ": "trigger",
+      "detail": "TRIGGER:1,23172"
+    },
+    {
+      "t": 53.0274,
+      "typ": "trigger",
+      "detail": "TRIGGER:2,30380"
+    },
+    {
+      "t": 57.3099,
+      "typ": "trigger",
+      "detail": "TRIGGER:3,34588"
+    },
+    {
+      "t": 63.316,
+      "typ": "mittelung_zurueckgesetzt",
+      "detail": null
+    },
+    {
+      "t": 64.475,
+      "typ": "trigger",
+      "detail": "TRIGGER:4,41796"
+    },
+    {
+      "t": 70.7364,
+      "typ": "trigger",
+      "detail": "TRIGGER:5,47984"
+    },
+    {
+      "t": 73.8783,
+      "typ": "trigger",
+      "detail": "TRIGGER:6,51172"
+    },
+    {
+      "t": 78.102,
+      "typ": "trigger",
+      "detail": "TRIGGER:7,55380"
+    },
+    {
+      "t": 83.3777,
+      "typ": "trigger",
+      "detail": "TRIGGER:8,60578"
+    },
+    {
+      "t": 90.5881,
+      "typ": "trigger",
+      "detail": "TRIGGER:9,67786"
+    },
+    {
+      "t": 97.8223,
+      "typ": "trigger",
+      "detail": "TRIGGER:10,74994"
+    },
+    {
+      "t": 102.0432,
+      "typ": "trigger",
+      "detail": "TRIGGER:11,79202"
+    },
+    {
+      "t": 109.2976,
+      "typ": "trigger",
+      "detail": "TRIGGER:12,86410"
+    },
+    {
+      "t": 116.471,
+      "typ": "trigger",
+      "detail": "TRIGGER:13,93618"
+    },
+    {
+      "t": 121.6773,
+      "typ": "trigger",
+      "detail": "TRIGGER:14,98816"
+    },
+    {
+      "t": 127.8828,
+      "typ": "trigger",
+      "detail": "TRIGGER:15,105004"
+    },
+    {
+      "t": 132.1267,
+      "typ": "trigger",
+      "detail": "TRIGGER:16,109212"
+    },
+    {
+      "t": 137.3725,
+      "typ": "trigger",
+      "detail": "TRIGGER:17,114410"
+    },
+    {
+      "t": 144.5915,
+      "typ": "trigger",
+      "detail": "TRIGGER:18,121618"
+    },
+    {
+      "t": 150.7587,
+      "typ": "trigger",
+      "detail": "TRIGGER:19,127806"
+    },
+    {
+      "t": 157.9951,
+      "typ": "trigger",
+      "detail": "TRIGGER:20,135014"
+    },
+    {
+      "t": 164.2412,
+      "typ": "trigger",
+      "detail": "TRIGGER:21,141202"
+    },
+    {
+      "t": 167.4023,
+      "typ": "trigger",
+      "detail": "TRIGGER:22,144390"
+    },
+    {
+      "t": 173.6351,
+      "typ": "trigger",
+      "detail": "TRIGGER:23,150578"
+    },
+    {
+      "t": 180.9011,
+      "typ": "trigger",
+      "detail": "TRIGGER:24,157786"
+    },
+    {
+      "t": 187.0826,
+      "typ": "trigger",
+      "detail": "TRIGGER:25,163974"
+    },
+    {
+      "t": 193.2585,
+      "typ": "trigger",
+      "detail": "TRIGGER:26,170162"
+    },
+    {
+      "t": 199.4853,
+      "typ": "trigger",
+      "detail": "TRIGGER:27,176350"
+    },
+    {
+      "t": 204.6807,
+      "typ": "trigger",
+      "detail": "TRIGGER:28,181548"
+    },
+    {
+      "t": 210.9257,
+      "typ": "trigger",
+      "detail": "TRIGGER:29,187736"
+    },
+    {
+      "t": 215.1235,
+      "typ": "trigger",
+      "detail": "TRIGGER:30,191944"
+    },
+    {
+      "t": 221.346,
+      "typ": "trigger",
+      "detail": "TRIGGER:31,198132"
+    },
+    {
+      "t": 224.5067,
+      "typ": "trigger",
+      "detail": "TRIGGER:32,201320"
+    },
+    {
+      "t": 230.7469,
+      "typ": "trigger",
+      "detail": "TRIGGER:33,207508"
+    },
+    {
+      "t": 237.9635,
+      "typ": "trigger",
+      "detail": "TRIGGER:34,214716"
+    },
+    {
+      "t": 242.1779,
+      "typ": "trigger",
+      "detail": "TRIGGER:35,218924"
+    },
+    {
+      "t": 249.4008,
+      "typ": "trigger",
+      "detail": "TRIGGER:36,226132"
+    },
+    {
+      "t": 255.6126,
+      "typ": "trigger",
+      "detail": "TRIGGER:37,232320"
+    },
+    {
+      "t": 258.7939,
+      "typ": "trigger",
+      "detail": "TRIGGER:38,235508"
+    },
+    {
+      "t": 263.0159,
+      "typ": "trigger",
+      "detail": "TRIGGER:39,239716"
+    },
+    {
+      "t": 268.2714,
+      "typ": "trigger",
+      "detail": "TRIGGER:40,244914"
+    },
+    {
+      "t": 275.4919,
+      "typ": "trigger",
+      "detail": "TRIGGER:41,252122"
+    },
+    {
+      "t": 281.6957,
+      "typ": "trigger",
+      "detail": "TRIGGER:42,258310"
+    },
+    {
+      "t": 288.8956,
+      "typ": "trigger",
+      "detail": "TRIGGER:43,265518"
+    },
+    {
+      "t": 295.1307,
+      "typ": "trigger",
+      "detail": "TRIGGER:44,271706"
+    },
+    {
+      "t": 298.2987,
+      "typ": "trigger",
+      "detail": "TRIGGER:45,274894"
+    },
+    {
+      "t": 304.5192,
+      "typ": "trigger",
+      "detail": "TRIGGER:46,281082"
+    },
+    {
+      "t": 311.8269,
+      "typ": "trigger",
+      "detail": "TRIGGER:47,288290"
+    }
+  ]
+}
